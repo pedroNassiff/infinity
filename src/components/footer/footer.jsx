@@ -27,8 +27,8 @@ const Footer = () => {
                <Row>
                <Col lg="6" md="6" className="contenedor-social-footer">
                         <div className="round-social light">
-                            <a href="#" className="link"><i className="fa fa-facebook facefooter"></i></a>
-                            <a href="#" className="link"><i className="fa fa-instagram facefooter"></i></a>        
+                            <a href="#" className="link hvr-sweep-to-right"><i className="fa fa-facebook facefooter"></i></a>
+                            <a href="#" className="link hvr-sweep-to-right"><i className="fa fa-instagram facefooter"></i></a>        
                         </div>
                     </Col>
                </Row>

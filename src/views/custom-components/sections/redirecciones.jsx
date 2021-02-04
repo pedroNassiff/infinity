@@ -16,12 +16,13 @@ const Redirecciones = () => {
                 <Container>
                     <Row className="m-t-40">
                         <Col md="3" className="colRequerimientos">
-                            <Card className="card-shadow card-req">
+                            <Card className="card-shadow card-req ">
                             <CardBody className="card-body-req">
                             <Row>
                             <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
                             </Row>
                             <h5 className="font-medium m-b-0 titulo-requerimientos">Capacitaciones</h5>
+                            <hr className="linea-redirecciones"/>
                                     <p className="m-b-0 font-14 subtitulo-requerimientos">Cursos para tu 
                                     formación laboral 
                                     y emprendedora</p>
@@ -37,6 +38,7 @@ const Redirecciones = () => {
                             <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img"><img src={img2} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
                             </Row>
                             <h5 className="font-medium m-b-0 titulo-requerimientos">Empleo</h5>
+                            <hr className="linea-redirecciones"/>
                                     <p className="m-b-0 font-14 subtitulo-requerimientos">Postulación
                                     a búsquedas
                                     laborales.</p>
@@ -50,6 +52,7 @@ const Redirecciones = () => {
                             <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
                             </Row>
                             <h5 className="font-medium m-b-0 titulo-requerimientos">Oficios</h5>
+                            <hr className="linea-redirecciones"/>
                                     <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas
                                     de promoción y 
                                     comercialización</p>
@@ -63,6 +66,7 @@ const Redirecciones = () => {
                             <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img"><img src={img4} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
                             </Row>
                             <h5 className="font-medium m-b-0 titulo-requerimientos">Empresas</h5>
+                            <hr className="linea-redirecciones"/>
                                     <p className="m-b-0 font-14 subtitulo-requerimientos">Programas y
                                     beneficios para 
                                     contratar y 
@@ -77,6 +81,7 @@ const Redirecciones = () => {
                             <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
                             </Row>
                             <h5 className="font-medium m-b-0 titulo-requerimientos">Emprendimientos</h5>
+                            <hr className="linea-redirecciones"/>
                                     <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas de 
                                     promoción, 
                                     comercialización

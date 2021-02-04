@@ -6,7 +6,7 @@ const HeaderBanner = () => {
     return (
         <div className="static-slider-head">
             <Container>
-                <Row className="justify-content-center">
+                <Row className="justify-content-center row-banner">
                     <Col lg="8" md="6" className="align-self-center text-center">
                         <h1 className="title-1">Punto de Empleo </h1>
                         <h1 className="title-2">del Gobierno del Chaco</h1>

@@ -4,7 +4,7 @@ import { Row, Col, Container, Card, CardBody, Button } from 'reactstrap';
 import Divider from '@material-ui/core/Divider';
 
 import img1 from '../../../assets/images/sumate/icono-engranaje.png';
-import img2 from '../../../assets/images/sumate/flecha1.png';
+import img2 from '../../../assets/images/sumate/LíneaIsumate.svg';
 
 
 const SumateComponent = () => {
@@ -21,12 +21,12 @@ const SumateComponent = () => {
                                         <h5 className="titulo-sumate">¿Sos empresa?</h5>
                                         </Row>
                                         <Row className="m-t-40 row-sumate2">
-                                        <Button className="botones-1">Sumate</Button>{' '}
+                                        <a href="/" className="botones-1 hvr-sweep-to-right">Sumate</a>{' '}
                                         </Row>
                                     </Col>
                                     <Col md="3" className="colSumate2">
                                     <Row>
-                                        <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho cont-img2"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones2" width="200" /></a>
+                                        <a href="/" className="img-ho cont-img2"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones2" width="200" /></a>
                                         </Row>
                                     </Col>
                                 </CardBody>
@@ -36,16 +36,60 @@ const SumateComponent = () => {
                         <Col md="3"  className="colSumate">
                             <Card className="card-shadow card-sumate">
                                 <CardBody className="card-sumate2">
-                                    <Row className="m-t-40 row-sumate row-sumate">
+                                    <Row className="m-t-40 row-sumate row-sumatenumero1">
                                     <h5 className="numero-sumate">01</h5>
                                     </Row>
-                                    <Row className="m-t-40 row-sumate">
+                                    <Row className="m-t-40 row-sumate row-sumatenumero12">
                                     <h6 className="titulo-sumate2">Inscribite</h6>{' '}
                                     </Row>
                                 </CardBody>
                             </Card>
                         </Col>
-                        <Col md="3" className="colSumate3">
+                         <Col md="3" className="colSumate3 contenedorLineaimg">
+                      
+                            {/* <hr className="linea-sumate"/> */}
+
+                      
+                        </Col>
+                        <Col md="6"  className="colSumatecol2">
+                            <Card className="card-shadow card-sumate3">
+                                <CardBody className="card-sumate2">
+                                    <Row className="m-t-40 row-sumate row-sumatenumero">
+                                    <h5 className="numero-sumate">02</h5>
+                                    </Row>
+                                    <Row className="m-t-40 row-sumate row-sumatenumero">
+                                    <h6 className="titulo-sumate2">Te llamamos</h6>{' '}
+                                    </Row>
+                                </CardBody>
+                            </Card>
+                        </Col>
+                        <Col md="3" className="colSumate3 contenedorLineaimg2">
+                      
+                             <hr className="linea-sumate2"/>
+
+                
+                        </Col>
+                        <Col md="6"  className="colSumatecol23">
+                                    <Card className="card-shadow card-sumate4">
+                                        <CardBody className="card-sumate2">
+                                            <Row className="m-t-40 row-sumate row-sumatenumero">
+                                            <h5 className="numero-sumate">03</h5>
+                                            </Row>
+                                            <Row className="m-t-40 row-sumate row-sumatenumero">
+                                            <h6 className="titulo-sumate2">Sumate a los beneficios</h6>{' '}
+                                            </Row>
+                                        </CardBody>
+                                    </Card>
+                                </Col>
+                  
+                                <Col md="3" className="colSumate3 contenedorLineaimg2">
+                      
+                      <hr className="linea-sumate3"/>
+
+         
+                 </Col>
+                        {/**
+                         <Col md="3" className="colSumate3">
                             <Row>
                                 <a href="https://capacitaciones.chaco.gob.ar/" className="img-ho "><img src={img2} alt="img" className="img-responsive img-thumbnail img-redirecciones3"  /></a>
                             </Row>
@@ -79,6 +123,8 @@ const SumateComponent = () => {
                                 </CardBody>
                             </Card>
                         </Col>  
+                         */}
+                        
                         </Col>
                                               
                     </Row>

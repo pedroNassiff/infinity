@@ -7,15 +7,23 @@ import logo from '../../assets/images/logos/logo1.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () => setIsOpen(!isOpen);
+    const [topbar, setTopbar] = useState(false)
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
     /*--------------------------------------------------------------------------------*/
+    const changeBackground = () => {
+        if(window.scrollY >= 10){
+            setTopbar(true);
+        } else{
+            setTopbar(false);
+        }
+    };
 
+    window.addEventListener('scroll', changeBackground);
     return (
-        <div className="topbar" id="top">
+        <div className={topbar ? 'topbar active' : 'topbar'} id="top">
             <div className="header6">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
