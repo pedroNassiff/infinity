@@ -1,0 +1,438 @@
+/*
+Template Name: Admin Press Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*============================================================== 
+ For Laptop & above all (1650px) 
+ ============================================================== */
+
+@media(min-width:1650px) {
+
+}
+
+
+/*============================================================== 
+ For Laptop & above all (1370px) 
+ ============================================================== */
+
+@media(max-width:1370px) {
+    
+}
+
+
+/*-- ============================================================== 
+ Small Desktop & above all (1024px) 
+ ============================================================== */ 
+
+@media(min-width:1024px) {
+    .contact4 {
+        .contact-box {
+            padding: 80px 105px 80px 0px;
+        }
+    } 
+    .hover-dropdown .navbar-nav {
+        > .dropdown:hover {
+            > .dropdown-menu {
+                display: block;
+                margin-top: 0px;
+                
+            }
+        }
+    }
+    .navbar-nav {
+        > .dropdown {
+             .dropdown-menu {
+                min-width: 210px;
+                margin-top: 0px;
+            }
+        }
+    }
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+
+@media(max-width:1023px) {
+    .d-flex{
+        display: block!important;
+        &.no-block{
+            display: flex !important;
+        }
+    }
+    .wrap-feature30-box{
+        left:0;
+        right:0;
+        margin: 0 auto;
+        top:50%;
+    }
+    .wrap-feature31-box,
+    .contact4,
+    .form6 {
+        .right-image{
+            position: relative;
+            bottom: -95px;
+            img{
+                width: 100%;
+                
+            }
+        }
+    }
+    .contact1 {
+        .detail-box {
+            margin-top: 40px;
+        }
+        .p-r-40 {
+            padding-right: 0;
+        }
+    }
+    .contact4 {
+        .contact-box {
+            padding: 40px 0px 40px 0px;
+        }
+    }
+    .contact3 {
+        .c-detail {
+            text-align: center;
+            .m-r-20 {
+                margin-right: 0;
+            }
+            h6 {
+                margin-top: 20px;
+            }
+        }
+        .m-l-30 {
+            margin-left: 0;
+        }
+        .contact-box {
+            margin-top: 30px;
+        }
+    }
+    .wrap-feature34-box {
+        .left-image{
+            position: relative;
+            top:-90px;
+        }
+    }
+    .po-absolute{
+        position: relative;
+    }
+    .contact2 .bg-image {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .topbar{
+        background: $themecolor; 
+        position: relative;
+        &.animated{
+            animation-duration:0s;
+            &.slideInDown{
+                    -webkit-animation-name: none;
+                    animation-name: none;
+            }
+        }
+    }
+    
+}
+
+
+/*-- ============================================================== 
+ Ipad & above all(768px) 
+ ============================================================== */
+
+@media(min-width:768px) {
+    
+   /*******************
+redirecciones
+*******************/
+
+.containerRequerimientosResponsive{
+    display: none;
+    
+    }
+    
+}
+
+
+/*-- ============================================================== 
+ Phone and below ipad(767px) 
+ ============================================================== */
+
+@media(max-width:767px) {
+    /*This is for the Global*/
+
+    .topbar{
+        background-color: rgba(204, 204, 204, .80);
+
+    }
+
+    .static-slider-head {
+        min-height: 365px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: auto;
+        background-size: cover;
+        background-position: center center;
+        background-image: $banner-image2;
+    
+        .title {
+            color: $white;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 60px;
+        }
+        .title-1 {
+            color: $white;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 1px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+        }
+        .title-2 {
+            color: $white;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 60px;
+        }
+    
+        .subtitle {
+            color: $white;
+            line-height: 30px;
+        }
+    }
+    
+    .carousel-item>img {
+        width: 100%;
+    }
+    .b-l, .b-r{
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 1px solid $border;
+    }
+    .img-inline{
+        li.half-width{
+            width: 100%;
+        }
+    }
+    .both-space{
+        margin: 10px 0;
+    }
+    .side-content{
+        padding: 40px 20px;
+    }
+    
+    .general-listing.two-part{
+        li{
+            width: 100%;
+            display: block;
+        }
+    }
+
+    /*******************
+Header 6
+*******************/
+.header6 {
+    .navbar-toggler {
+        color: #01B7E8;
+        font-size: 2.25rem;
+    }
+
+    .navbar-brand {
+        line-height: 80px;
+    }
+}
+
+.nav-scoial-responsive{
+    visibility: visible;
+    margin-top: 5em;
+}
+.navSocialResponsive{
+    margin-top: -4em!important;
+}
+.navSocialResponsiveIg{
+    margin-top: -4em!important;
+    margin-left: -1em;
+}
+.navHiddenSocialResponsiveFb{
+    visibility: hidden;
+}
+.navHiddenSocialResponsiveIg{
+    visibility: hidden;
+}
+
+    /*REQUERIMIENTOS*/
+
+.divReqResponsive{
+    padding: 0px;
+}
+
+.containerRequerimientosEscritorio{
+    display: none;
+
+}
+.containerRequerimientosResponsive{
+    margin-top: -2em;
+    margin-bottom: 2.5em;
+}
+
+
+.colRequerimientos{
+    max-width: 138%;
+}
+.card-req{
+    height: 87% !important;
+width: 21em;
+margin-bottom: -8px;
+}
+
+.card-req:hover{
+    background-color: #F2F9F9;
+    border: 1px solid #01B7E8!important;
+    cursor: pointer;
+    
+    margin-top: 0%;
+    
+}
+.card-body-req {
+    margin-top: 0em;
+}
+.cont-img{
+    margin-left: 1.5em;
+    margin-top: -0.2em;
+    
+}
+.tituloRequerimientosResponsive{
+    margin-top: -5%;
+    font-size: 12px !important;
+    margin-left: -5em;
+}
+
+.img-redirecciones{
+    width: 3em !important;
+    height: 3em !important;
+}
+
+.linea-redirecciones{
+    width: 4em;
+}
+.tituloRequerimientosResponsive1{
+    margin-top: -5%;
+    font-size: 14px !important;
+    margin-left: -3em;
+}
+.linea-redirecciones1{
+    width: 4em;
+    height: 0.1em;
+    border: 1px solid #FFBB00;
+    border-radius: 22%;
+    background: #FFBB00;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 4.5em;
+}
+.subtitulo-requerimientos1{
+    text-align: left;
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 9px !important;
+    margin-left: 9em;
+    width: 24em;
+}
+
+.tituloRequerimientosResponsive2{
+    margin-top: -5%;
+    font-size: 14px !important;
+    margin-left: -3em;
+}
+.linea-redirecciones2{
+    width: 4em;
+    height: 0.1em;
+    border: 1px solid #FFBB00;
+    border-radius: 22%;
+    background: #FFBB00;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 4.5em;
+}
+.subtitulo-requerimientos2{
+    text-align: left;
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 9px !important;
+    margin-left: 9em;
+    width: 24em;
+}
+hr{
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+    // border: 0;
+    // border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 5.6em; 
+}
+.subtitulo-requerimientos{
+    text-align: left;
+    margin-top: 1em;
+    font-weight: 400;
+    font-size: 9px !important;
+}
+
+
+    /*This is for the feature 12*/
+    .wrap-feature-12 .uneven-box{
+        margin-top: 0px;
+    }
+    /*This is for the feature 16*/
+    .wrap-feature-16{
+        .with-text{
+            margin-left: 0px;
+        }
+    }
+    /*This is for the feature 18*/
+    .wrap-feature-18 .icon-position .icon-round{
+        top:157px;
+        right:30px;
+    }
+    /*This is for the feature 22*/
+    .wrap-feature-22 .text-box, .wrap-feature23-box .text-box{
+        padding: 20px 0px;
+    }
+    .wrap-feature30-box{
+        position: relative;
+    }
+    .contact3 {
+        .p-l-0 {
+            padding-left: 20px;
+        }
+    }
+    .contact4 {
+        .contact-box {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .modal2 {
+        .modal-bg {
+            padding: 30px; 
+        }
+    }
+    .modal3 {
+        .modal-bg {
+            padding: 50px 40px 60px;
+        }
+    }
+    .modal4 {
+        .modal-bg {
+            padding: 40px;
+        }
+    }
+    
+    .dropdown-submenu > .dropdown-menu.show {
+        display: block;
+    }
+}
