@@ -15,7 +15,7 @@ Topbar
     transition: 0.2s ease-in;
     width: 100%;
     position: absolute;
-    background-color: rgba(255, 255, 255, .60);
+    
     z-index: 20;
     position: fixed;
 }
@@ -68,22 +68,23 @@ REDIRECCIONES
 
 
 .card-body-req{
-    margin-top: 8em;
+    margin-top: 21%;
 }
 
 .card-req{
     border: 1px solid #E5E5E5!important;
     border-radius: 100px;
+    background-color: inherit;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
-    height: 349px!important;
+    height:200px !important;
 }
 
 .card-req:hover{
-    background-color: #F2F9F9;
-    border: 1px solid #01B7E8!important;
+    background-color: #FF5C00;
+    border: 1px solid #FF5C00!important;
     cursor: pointer;
     
     margin-top: -4%;
@@ -91,20 +92,20 @@ REDIRECCIONES
 }
 
 .card-req:hover h5{
-    color:#01B7E8!important;
+    color:white!important;
     
 }
 .linea-redirecciones{
     height: 0.2em;
-    border: 1px solid #FFBB00;
+    border: 1px solid #FF5C00;
     border-radius: 12%;
-    background: #FFBB00;
+    background: #FF5C00;
     width: 6em;
 }
 
 .card-req:hover hr{
-    background: #01B7E8;
-    border: 1px solid#01B7E8;
+    background: #FF5C00;
+    border: 1px solid#FF5C00;
     
 }
 
@@ -114,7 +115,7 @@ requerimientos
 .titulo-requerimientos{
     font-size: Montserrat;
     text-align: center;
-    color: #000000;
+    color: white;
     font-weight: 600!important;
     font-size: 16px!important;
 }
@@ -155,7 +156,7 @@ Header 6
     .navbar-nav {
         .nav-link {
             padding: 35px 30px;
-            color: black;
+            color: white;
             transition-duration: 1.2s;
             transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
         }
@@ -211,14 +212,14 @@ redes-sociales-nav
 }
 
 .static-slider-head {
-    min-height: 365px;
+    min-height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: auto;
     background-size: cover;
     background-position: center center;
-    background-image: $banner-image;
+    background-color: black;
 
     .title {
         color: $white;
@@ -227,10 +228,12 @@ redes-sociales-nav
         line-height: 60px;
     }
     .title-1 {
-        color: $white;
+        color: #ffffff;
         font-weight: 50;
-        font-size: 50px;
+        font-size: 2rem;
         line-height: 60px;
+        margin-top: -33%;
+        margin-left: -7%;
     }
     .title-2 {
         color: $white;
@@ -243,6 +246,20 @@ redes-sociales-nav
         color: $white;
         line-height: 30px;
     }
+
+    .colImgInf{
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-left: 8%;
+    }
+    .imgColInf{
+        height: 13em!important;
+            width: 100%;
+    
+    display: inline-block;
+    }
+    
+    
 }
 
 .carousel-item>img {
@@ -714,6 +731,7 @@ Requerimientos Cards
     height: 10em;
     display: inline-block;
 }
+
 
 /******************* 
 Incentivos Cards
@@ -2461,4 +2479,44 @@ Modal in center
 .animated {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
+}
+
+
+.colanimacion{
+    height: auto;
+    margin-top: -8em;
+    position: relative;
+}
+
+.colRed{
+    margin-top: -167px!important;
+}
+.PcontainerService{
+    height: 20em;
+}
+.colTarjetaService{
+    margin-top: 8%;
+    margin-left: 8%;
+    position: relative;
+}
+
+.btnService{
+    margin-left: 2em;
+}
+.colDescService{
+    margin-left: 42% !important;
+    margin-top: -15%;
+
+}
+.cardService{
+    background-color: inherit;
+    // margin-left: -7em;
+}
+
+.backReq{
+    background-color: black;
+}
+
+.rowServicios{
+    margin-top: -4em!important;
 }

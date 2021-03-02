@@ -12,22 +12,20 @@ import img5 from '../../../assets/images/iconos/emprendimientos.png';
 const Redirecciones = () => {
     return (
         <div>
-            <div>
+            <div className="backReq">
                 <Container className="containerRequerimientosEscritorio">
-                    <Row className="m-t-40">
+                    <Row className="m-t-40 colRed">
                         <Col md="3" className="colRequerimientos">
-                            <a className="linkRedirecciones" href="https://capacitaciones.chaco.gob.ar/" target="_blank" rel="noopener noreferrer">
+                            <a className="linkRedirecciones" href="/" target="_blank" rel="noopener noreferrer">
                                  <Card 
                                     className="card-shadow card-req">
                                         <CardBody className="card-body-req">
-                                            <Row>
+                                            {/* <Row>
                                                 <a  className="img-ho cont-img"><img src={img1} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
-                                            </Row>
-                                                <h5 className="font-medium m-b-0 titulo-requerimientos">Capacitaciones</h5>
+                                            </Row> */}
+                                                <h5 className="font-medium m-b-0 titulo-requerimientos">LANDING PAGE</h5>
                                                 <hr className="linea-redirecciones"/>
-                                                <p className="m-b-0 font-14 subtitulo-requerimientos">Cursos para tu 
-                                                                                                        formación laboral 
-                                                                                                            y emprendedora</p>
+                                                
                                         </CardBody>
                                 </Card>
                             </a>
@@ -38,14 +36,14 @@ const Redirecciones = () => {
                                     <CardBody 
                                     className="card-body-req"
                                     >
-                                        <Row>
+                                        {/* <Row>
                                             <a className="img-ho cont-img"><img src={img2} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
-                                        </Row>
-                                            <h5 className="font-medium m-b-0 titulo-requerimientos">Empleo</h5>
+                                        </Row> */}
+                                            <h5 className="font-medium m-b-0 titulo-requerimientos">API REST FULL</h5>
                                             <hr className="linea-redirecciones"/>
-                                            <p className="m-b-0 font-14 subtitulo-requerimientos">Postulación
+                                            {/* <p className="m-b-0 font-14 subtitulo-requerimientos">Postulación
                                                                                                     a búsquedas
-                                                                                                        laborales.</p>
+                                                                                                        laborales.</p> */}
                                     </CardBody>
                                 </Card>
                             </a> 
@@ -54,14 +52,14 @@ const Redirecciones = () => {
                             <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSdI_-U-i2_UemVLFX23auRufzVvd-m6ZY_Uic3uEixAZaqyDA/viewform" target="_blank" rel="noopener noreferrer">
                                 <Card className="card-shadow card-req">
                                     <CardBody className="card-body-req">
-                                        <Row>
+                                        {/* <Row>
                                              <a className="img-ho cont-img"><img src={img3} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
-                                        </Row>
-                                             <h5 className="font-medium m-b-0 titulo-requerimientos">Oficios</h5>
+                                        </Row> */}
+                                             <h5 className="font-medium m-b-0 titulo-requerimientos">CLOUD SERVER</h5>
                                             <hr className="linea-redirecciones"/>
-                                            <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas
+                                            {/* <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas
                                                                                                     de promoción y 
-                                                                                                        comercialización</p>
+                                                                                                        comercialización</p> */}
                                     </CardBody>
                                 </Card>
                             </a>
@@ -70,15 +68,15 @@ const Redirecciones = () => {
                             <a href="/" target="_blank" rel="noopener noreferrer" className="linkRedirecciones">
                                 <Card className="card-shadow card-req">
                                     <CardBody className="card-body-req">
-                                        <Row>
+                                        {/* <Row>
                                             <a className="img-ho cont-img"><img src={img4} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
-                                        </Row>
-                                            <h5 className="font-medium m-b-0 titulo-requerimientos">Empresas</h5>
+                                        </Row> */}
+                                            <h5 className="font-medium m-b-0 titulo-requerimientos">ELEARNING</h5>
                                             <hr className="linea-redirecciones"/>
-                                            <p className="m-b-0 font-14 subtitulo-requerimientos">Programas y
+                                            {/* <p className="m-b-0 font-14 subtitulo-requerimientos">Programas y
                                                                                                     beneficios para 
                                                                                                         contratar y 
-                                                                                                            capacitar personal.</p>
+                                                                                                            capacitar personal.</p> */}
                                     </CardBody>
                                 </Card>
                             </a>
@@ -87,15 +85,15 @@ const Redirecciones = () => {
                             <a className="linkRedirecciones" href="https://docs.google.com/forms/d/e/1FAIpQLSdmgQi-o9ScNzxUKeGMl7-1ODUKWyfN5UxBFOz-10MMQIcZmA/viewform" target="_blank" rel="noopener noreferrer" >
                                 <Card className="card-shadow card-req">
                                     <CardBody className="card-body-req">
-                                        <Row>
+                                        {/* <Row>
                                              <a className="img-ho cont-img"><img src={img5} alt="img" className="img-responsive img-thumbnail img-redirecciones" width="200" /></a>
-                                        </Row>
-                                             <h5 className="font-medium m-b-0 titulo-requerimientos">Emprendimientos</h5>
+                                        </Row> */}
+                                             <h5 className="font-medium m-b-0 titulo-requerimientos">SEGURIDAD</h5>
                                             <hr className="linea-redirecciones"/>
-                                            <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas de 
+                                            {/* <p className="m-b-0 font-14 subtitulo-requerimientos">Herramientas de 
                                                                                                     promoción, 
                                                                                                      comercialización
-                                                                                                        y financiamiento.</p>
+                                                                                                        y financiamiento.</p> */}
                                     </CardBody>
                                 </Card>
                             </a>

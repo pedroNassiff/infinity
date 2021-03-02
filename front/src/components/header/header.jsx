@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse } from 'reactstrap';
 
-import logo from '../../assets/images/logos/logo1.png';
+import logo from '../../assets/images/header/logoheader.svg';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -59,14 +59,14 @@ const Header = () => {
                                 </NavItem>
                                 <NavItem>
                                     <Link className="nav-link" to={"/"}>
-                                        CONTACTO
+                                        NOSOTROS
                                     	</Link>
                                 </NavItem>
-                                <NavItem>
+                                {/* <NavItem>
                                     <Link className="nav-link" to={"/"}>
                                         INCENTIVOS PARA EL EMPLEO
                                     	</Link>
-                                </NavItem>
+                                </NavItem> */}
                                 <NavItem className="navHiddenSocialResponsiveFb">
                                     <Link className="nav-link" to={"/"}>
                                         <div className="round-social light">

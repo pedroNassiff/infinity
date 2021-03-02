@@ -9,10 +9,16 @@ import Footer from "../../components/footer/footer.jsx";
 // sections for this page
 import HeaderComponent from "./sections/headercomponent.jsx";
 import BannerComponent from "./sections/bannercomponent.jsx";
-import FormBannerComponent from "./sections/formbannercomponent.jsx";
+import FormBannerComponent from "./sections/landing.jsx";
+import ApirestComponent from "./sections/apirest.jsx";
+import AlojamientoComponent from "./sections/alojamiento.jsx";
+import ElearningComponent from "./sections/elearning.jsx";
+import SeguridadComponent from "./sections/seguridad.jsx";
+
 import FeatureComponent from "./sections/featurecomponent.jsx";
 import PortfolioComponent from "./sections/portfoliocomponent.jsx";
 import Redirecciones from "./sections/redirecciones.jsx";
+import RedireccionesService from "./sections/redireccionesService.jsx";
 import Sumate from "./sections/sumatecomponent.jsx";
 import Postulate from "./sections/sumatecomponent.jsx";
 import PricingComponent from "./sections/pricingcomponent.jsx";
@@ -33,6 +39,11 @@ const CustomComponents = () => {
                     <HeaderComponent />
                     <BannerComponent />
                     <FormBannerComponent />
+                    <ApirestComponent />
+                    <AlojamientoComponent />
+                    <ElearningComponent />
+                    <SeguridadComponent />
+
                     <FeatureComponent />
                     <PortfolioComponent />
                     <Redirecciones />
