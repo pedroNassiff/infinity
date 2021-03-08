@@ -17,11 +17,8 @@ import StarsComponent from "./views/custom-components/stars.jsx";
 
 import FormCustomComponents from "./views/custom-components/form";
 
-import Amplify from "aws-amplify";
 
-import awsExports from "./aws-exports";
 
-Amplify.configure(awsExports);
 
 var hist = createBrowserHistory();
 

@@ -112,10 +112,10 @@ const Components = () => {
                             )}
                             </Content>
                         </div> */}
-                    <Redirecciones />
+                    {/* <Redirecciones /> */}
                
                     <FormBannerComponent />
-                    <RedireccionesService />
+                    {/* <RedireccionesService />
                     <ApirestComponent />
                     <RedireccionesService />
                     <AlojamientoComponent />
@@ -123,7 +123,7 @@ const Components = () => {
                     <ElearningComponent />
                     <RedireccionesService />
                     <SeguridadComponent />
-                    <RedireccionesService />
+                    <RedireccionesService /> */}
                     {/* <PortfolioComponent />
                     <Sumate />
                     <Postulate /> */}

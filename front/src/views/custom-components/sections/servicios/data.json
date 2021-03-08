@@ -1,0 +1,58 @@
+{
+    "servicios": [
+        {
+            "_id": "s1",
+            "titulo": "Landing Page",
+            "subtitulo": "Transformación Digital",
+            "descripcion": "Integrarse al universo digital adaptando un sitio web a cada necesidad. Pensar en una solución aplicando las últimas tecnologías del mercado",
+            "UrlToRedirect": "landingPage",
+            "tag1": "frontendLanding",
+            "tag2": "backendLanding",
+            "image": "/"
+        },
+        {
+            "_id": "s2",
+            "titulo": "Web App",
+            "subtitulo": "Transformación Digital",
+            "descripcion": "Integrarse al universo digital adaptando un sitio web a cada necesidad. Pensar en una solución aplicando las últimas tecnologías del mercado",
+            "UrlToRedirect": "landingPage",
+            "tag1": "frontendLanding",
+            "tag2": "backendLanding",
+            "image": "/"
+        },
+        {
+            "_id": "s3",
+            "titulo": "Alojamiento",
+            "subtitulo": "Transformación Digital",
+            "descripcion": "Integrarse al universo digital adaptando un sitio web a cada necesidad. Pensar en una solución aplicando las últimas tecnologías del mercado",
+            "UrlToRedirect": "landingPage",
+            "tag1": "frontendLanding",
+            "tag2": "backendLanding",
+            "image": "/"
+        },
+
+        {
+            "_id": "s4",
+            "titulo": "E-learning",
+            "subtitulo": "Transformación Digital",
+            "descripcion": "Integrarse al universo digital adaptando un sitio web a cada necesidad. Pensar en una solución aplicando las últimas tecnologías del mercado",
+            "UrlToRedirect": "landingPage",
+            "tag1": "frontendLanding",
+            "tag2": "backendLanding",
+            "image": "/"
+        },
+   
+ 
+        {
+            "_id": "s5",
+            "titulo": "Seguridad",
+            "subtitulo": "Transformación Digital",
+            "descripcion": "Integrarse al universo digital adaptando un sitio web a cada necesidad. Pensar en una solución aplicando las últimas tecnologías del mercado",
+            "UrlToRedirect": "landingPage",
+            "tag1": "frontendLanding",
+            "tag2": "backendLanding",
+            "image": "/"
+        }
+   
+    ]
+} 
