@@ -24,7 +24,7 @@ import Postulate from "./sections/sumatecomponent.jsx";
 import PricingComponent from "./sections/pricingcomponent.jsx";
 import TeamComponent from "./sections/teamcomponent.jsx";
 import TestimonialComponent from "./sections/testimonialcomponent.jsx";
-import BlogComponent from "./sections/blogcomponent.jsx";
+import ProyectosComponent from "./sections/proyectosComponent.jsx";
 import C2aComponent from "./sections/c2acomponent.jsx";
 import ContactComponent from "./sections/contactcomponent.jsx";
 import CallToAction from "../../components/call-to-action/CallToAction"
@@ -52,7 +52,7 @@ const CustomComponents = () => {
                     <PricingComponent />
                     <TeamComponent />
                     <TestimonialComponent />
-                    <BlogComponent />
+                    <ProyectosComponent />
                     <C2aComponent />
                     <ContactComponent />
                     <CallToAction />

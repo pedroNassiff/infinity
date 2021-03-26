@@ -166,7 +166,7 @@ redirecciones
     /*This is for the Global*/
 
     .topbar{
-        background-color: rgba(204, 204, 204, .80);
+        background-color: transparent;
 
     }
 
@@ -237,9 +237,21 @@ redirecciones
     /*******************
 Header 6
 *******************/
+.imgResponsiveNosotros{
+    width: 98%;
+}
+
+
+.containerGeneralBlack{
+    overflow: hidden;
+}
+
+.paddingTextosResponsive{
+    margin-left: 2%;
+}
 .header6 {
     .navbar-toggler {
-        color: #01B7E8;
+        color: white!important;
         font-size: 2.25rem;
     }
 
@@ -434,5 +446,55 @@ hr{
     
     .dropdown-submenu > .dropdown-menu.show {
         display: block;
+    }
+
+    .tituloHeader{
+        font-size: 1.2rem;
+    }
+    .cardServiceEcom{
+        margin-top: 6em !important;
+        margin-left: -9em;
+    }
+    .cardServiciosPadding{
+        padding: 0px!important;
+    }
+
+    .tituloeLanding{
+        position: absolute;
+        margin-top: -3em;
+        margin-left: -4em;
+
+    }
+    .tituloeApi {
+        position: absolute;
+        margin-top: -3em;
+        margin-left: 15%;
+    }
+    .tituloeCommerce {
+        position: absolute;
+        margin-top: -3em;
+        margin-left: 7%;
+    }
+    .tituloelearning {
+        position: absolute;
+        margin-top: -2em;
+        margin-left: 13%;
+        margin-bottom: 1em;
+    }
+
+    .responsiveRowFooter{
+        display:block;
+        margin-left: 0.3em;
+        margin-right: 0;
+
+    }
+
+    .colanimacionResponsive{
+        height: 50%;
+        width: 81%;
+        position: relative;
+        margin-top: -13em;
+        transform: rotate(270deg);
+        margin-left: 35%;
     }
 }

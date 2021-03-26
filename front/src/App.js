@@ -1,82 +1,74 @@
-/* src/App.js */
-import React, { useEffect, useState } from 'react'
-import Amplify, { API, graphqlOperation } from 'aws-amplify'
-import { createTodo } from './graphql/mutations'
-import { listTodos } from './graphql/queries'
-import { withAuthenticator } from '@aws-amplify/ui-react'
 
-import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
 
-const initialState = { name: '', description: '' }
+import React from "react";
+import ReactDOM from "react-dom";
+import { createBrowserHistory } from "history";
 
-const App = () => {
-  const [formState, setFormState] = useState(initialState)
-  const [todos, setTodos] = useState([])
+import './assets/scss/style.scss';
+//import App from './App'
+// pages for this product
+import Components from "./views/components/components.jsx";
+import Proyectos from "./views/custom-components/proyectos.jsx";
+import InfinityDocs from "./views/custom-components/infinityDocs.jsx";
+import Componentes from "./views/custom-components/Componentes.jsx";
+import EditarComponentes from "./views/custom-components/EditarComponentes.jsx";
 
-  useEffect(() => {
-    fetchTodos()
-  }, [])
 
-  function setInput(key, value) {
-    setFormState({ ...formState, [key]: value })
-  }
+import CustomComponents from "./views/custom-components/custom-components.jsx";
+import StarsComponent from "./views/custom-components/proyectos.jsx";
+import Nosotros from "./views/custom-components/nosotros.jsx";
+import Loader from "./views/custom-components/sections/Loader.jsx";
 
-  async function fetchTodos() {
-    try {
-      const todoData = await API.graphql(graphqlOperation(listTodos))
-      const todos = todoData.data.listTodos.items
-      setTodos(todos)
-    } catch (err) { console.log('error fetching todos') }
-  }
+import Header from "./components/header/header.jsx";
+import HeaderBanner from "./components/banner/banner";
+import Footer2 from "./components/footer/footer2.jsx";
 
-  async function addTodo() {
-    try {
-      if (!formState.name || !formState.description) return
-      const todo = { ...formState }
-      setTodos([...todos, todo])
-      setFormState(initialState)
-      await API.graphql(graphqlOperation(createTodo, {input: todo}))
-    } catch (err) {
-      console.log('error creating todo:', err)
-    }
-  }
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import FormCustomComponents from "./views/custom-components/form";
+
+import LandingPage from "./views/custom-components/sections/servicios/landingPage";
+import LandingBuilder from './views/custom-components/sections/containers/componentesBuilder/LandingBuilder';
+ import "./styles.css";
+// import "./assets/scss/common.scss";
+
+
+import { Provider } from 'react-redux';
+import store from './store';
+
+var hist = createBrowserHistory();
+
+function App() {
 
   return (
-    <div style={styles.container}>
-      <h2>Amplify Todos</h2>
-      <input
-        onChange={event => setInput('name', event.target.value)}
-        style={styles.input}
-        value={formState.name}
-        placeholder="Name"
-      />
-      <input
-        onChange={event => setInput('description', event.target.value)}
-        style={styles.input}
-        value={formState.description}
-        placeholder="Description"
-      />
-      <button style={styles.button} onClick={addTodo}>Create Todo</button>
-      {
-        todos.map((todo, index) => (
-          <div key={todo.id ? todo.id : index} style={styles.todo}>
-            <p style={styles.todoName}>{todo.name}</p>
-            <p style={styles.todoDescription}>{todo.description}</p>
-          </div>
-        ))
-      }
-    </div>
-  )
-}
+    <Router>
+      <Provider store={store}>
+        <Loader />
+        <Header />
 
-const styles = {
-  container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
-  todo: {  marginBottom: 15 },
-  input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
-  todoName: { fontSize: 20, fontWeight: 'bold' },
-  todoDescription: { marginBottom: 0 },
-  button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
-}
 
-export default withAuthenticator(App)
+        <Switch>
+          <Route path="/custom-components" component={CustomComponents} />
+          <Route
+            path="/proyectos" component={StarsComponent} />
+          <Route path="/nosotros" component={Nosotros} />
+          <Route path="/infinity-docs" component={InfinityDocs} />
+          <Route path="/Componentes" component={Componentes} />
+          <Route path="/editarComponentes" component={EditarComponentes} />
+
+          {/* <Route path="/servicios-landing" component={LandingPage} /> */}
+
+
+
+          <Route path="/" component={Components} />
+          {/* <Route path="/proyectos" component={Proyectos} /> */}
+
+          <Route path="/form" component={FormCustomComponents} />
+        </Switch>
+
+
+      </Provider>
+
+    </Router>
+  );
+}
+export default App;

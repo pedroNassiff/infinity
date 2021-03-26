@@ -83,7 +83,6 @@ const Content = Keyframes.Spring(async next => {
 const Components = () => {
     return (
         <div id="main-wrapper">
-            <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
             

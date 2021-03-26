@@ -1,10 +1,6 @@
 /*
-Template Name: Wrakit UI Kit
-Author: wrappixel
-Email: niravjoshi87@gmail.com
-File: scss
-*/
 
+/* ./src/index.css */
 
 /******************* 
 Topbar
@@ -20,7 +16,7 @@ Topbar
     position: fixed;
 }
 .topbar.active{
-    background-color: rgb(233, 233, 233);
+    background-color: #1b1a1a;
 }
 /*******************
 REDIRECCIONES
@@ -138,7 +134,7 @@ Header 6
 *******************/
 .header6 {
     .navbar-toggler {
-        color: $white;
+        // color:#ffffff;
     }
 
     .navbar-brand {
@@ -222,7 +218,7 @@ redes-sociales-nav
     background-color: black;
 
     .title {
-        color: $white;
+        color:#ffffff;
         font-weight: 700;
         font-size: 55px;
         line-height: 60px;
@@ -236,14 +232,14 @@ redes-sociales-nav
         margin-left: -7%;
     }
     .title-2 {
-        color: $white;
+        color:#ffffff;
         font-weight: 700;
         font-size: 50px;
         line-height: 60px;
     }
 
     .subtitle {
-        color: $white;
+        color:#ffffff;
         line-height: 30px;
     }
 
@@ -692,7 +688,8 @@ Subtitle
 *******************/
 
 .subtitle {
-    color: $muted;
+    // color: #8d97ad;
+
     line-height: 24px;
 }
 
@@ -712,7 +709,7 @@ card
 }
 
 .card-group .card {
-    border: 1px solid $border;
+    border: 1px solid gray;
     margin-bottom: 30px;
 }
 
@@ -1024,7 +1021,7 @@ Icon space
 }
 
 .linking {
-    color: $headingtext;
+    // color: $headingtext;
 
     i {
         font-size: 14px;
@@ -1033,7 +1030,7 @@ Icon space
     }
 
     &:hover {
-        color: $themecolor;
+        // color: #316ce8;
 
         i {
             margin-left: 15px;
@@ -1064,7 +1061,7 @@ Listing
 
     &.with-underline {
         li {
-            border-bottom: 1px solid $border;
+            border-bottom: 1px solid gray;
             padding: 15px 0;
         }
     }
@@ -1096,7 +1093,7 @@ Image shadow
 *******************/
 
 .img-shadow {
-    box-shadow: $img-shadow;
+    // box-shadow: $img-shadow;
 }
 
 
@@ -1328,7 +1325,8 @@ position
 
 .navbar-nav .dropdown-menu.b-none {
     border: 0px;
-    box-shadow: $card-shadow;
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+
 }
 
 .navbar-nav {
@@ -1337,7 +1335,9 @@ position
 
 .navbar-nav .dropdown-menu.b-none {
     border: 0px;
-    box-shadow: $card-shadow;
+    box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+
+
 }
 
 .pre-scroll {
@@ -1393,7 +1393,8 @@ position
         list-style: none;
 
         a {
-            color: $bodytext;
+            color: #8d97ad;
+
             display: flex;
             padding: 10px 0;
             transition: 0.2s ease-in;
@@ -1401,7 +1402,8 @@ position
         }
 
         &:hover a {
-            color: $themecolor;
+            color: #316ce8
+;
             padding-left: 10px;
         }
 
@@ -1435,13 +1437,13 @@ position
 /*************/
 
 .form-control-dark {
-    background: $border;
-    color: $white;
-    border-color: $border;
+    background: gray;
+    color:#ffffff;
+    border-color: gray;
 
     &:focus {
-        background: $border;
-        color: $white;
+        background: gray;
+        color:#ffffff;
     }
 }
 
@@ -1472,13 +1474,15 @@ position
 
     &.light {
         a {
-            color: $dark;
-            background: $light;
+            color:#3e4555
+;
+            background:#8d97ad
+;
         }
 
         a:hover {
-            background: $dark;
-            color: $white;
+            background:#3e4555;
+            color:#ffffff;
         }
     }
 }
@@ -1526,7 +1530,7 @@ position
 
 .form-control {
     padding: .75rem;
-    border: 2px solid $border;
+    border: 2px solid gray;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -1562,8 +1566,9 @@ Grid page
 .show-grid [class^=col-] {
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid $border;
-    background-color: $light;
+    border: 1px solid gray;
+    background-color:#8d97ad;
+;
 }
 
 
@@ -1572,22 +1577,27 @@ list and media
 ******************/
 
 .list-group a.list-group-item:hover {
-    background: $light;
+    background:#8d97ad
+;
 }
 
 .list-group-item.active,
 .list-group .list-group-item.active:hover {
-    background: $themecolor;
-    border-color: $themecolor;
+    background: #316ce8
+;
+    border-color: #316ce8
+;
 }
 
 .list-group-item.disabled {
-    color: $muted;
-    background: $light;
+    color: #8d97ad
+;
+    background:#8d97ad
+;
 }
 
 .media {
-    border: 1px solid $border;
+    border: 1px solid gray;
     margin-bottom: 10px;
     padding: 15px;
 }
@@ -1664,15 +1674,18 @@ Vertical tabs
     .tabs-vertical {
         width: 150px;
         border-bottom: 0px;
-        border-right: 1px solid $border;
+        border-right: 1px solid gray;
         display: table-cell;
         vertical-align: top;
 
         li .nav-link {
-            color: $dark;
+            color:#3e4555
+;
             margin-bottom: 10px;
             border: 0px;
-            border-radius: $radius 0 0 $radius;
+            border-radius: 4px
+ 0 0 4px
+;
         }
     }
 
@@ -1686,9 +1699,10 @@ Vertical tabs
 .tabs-vertical li .nav-link.active,
 .tabs-vertical li .nav-link:hover,
 .tabs-vertical li .nav-link.active:focus {
-    background: $themecolor;
+    background: #316ce8
+;
     border: 0px;
-    color: $white;
+    color:#ffffff;
 }
 
 
@@ -1697,11 +1711,13 @@ Vertical tabs
 .customvtab .tabs-vertical li .nav-link.active,
 .customvtab .tabs-vertical li .nav-link:hover,
 .customvtab .tabs-vertical li .nav-link:focus {
-    background: $white;
+    background:#ffffff;
     border: 0px;
-    border-right: 2px solid $themecolor;
+    border-right: 2px solid #316ce8
+;
     margin-right: -1px;
-    color: $themecolor;
+    color: #316ce8
+;
 }
 
 .tabcontent-border {
@@ -1714,16 +1730,19 @@ Vertical tabs
         a.nav-link {
             border: 0px;
             margin-right: 3px;
-            color: $bodytext;
+            color: #8d97ad;
+
 
             &.active {
-                background: $themecolor;
-                color: $white;
+                background: #316ce8
+;
+                color:#ffffff;
             }
 
             &:hover {
-                color: $white;
-                background: $themecolor;
+                color:#ffffff;
+                background: #316ce8
+;
             }
         }
     }
@@ -1750,7 +1769,8 @@ Timeline page
     left: 50%;
     width: 3px;
     margin-left: -1.5px;
-    background-color: $light;
+    background-color:#8d97ad
+;
 }
 
 .timeline>li {
@@ -1783,8 +1803,9 @@ Timeline page
     position: relative;
     width: 46%;
     padding: 20px;
-    border: 1px solid $border;
-    border-radius: $radius;
+    border: 1px solid gray;
+    border-radius: 4px
+;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
 }
@@ -1796,9 +1817,9 @@ Timeline page
     top: 26px;
     right: -8px;
     border-top: 8px solid transparent;
-    border-right: 0 solid $border;
+    border-right: 0 solid gray;
     border-bottom: 8px solid transparent;
-    border-left: 8px solid $border;
+    border-left: 8px solid gray;
 }
 
 .timeline>li>.timeline-panel:after {
@@ -1808,9 +1829,9 @@ Timeline page
     top: 27px;
     right: -7px;
     border-top: 7px solid transparent;
-    border-right: 0 solid $white;
+    border-right: 0 solid#ffffff;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid $white;
+    border-left: 7px solid#ffffff;
 }
 
 .timeline>li>.timeline-badge {
@@ -1898,10 +1919,12 @@ ul.list-icons {
         transition: 0.2s ease-in;
 
         a {
-            color: $bodytext;
+            color: #8d97ad;
+
 
             &:hover {
-                color: $themecolor;
+                color: #316ce8
+;
             }
         }
 
@@ -1921,10 +1944,12 @@ ul.list-inline {
         }
 
         a {
-            color: $bodytext;
+            color: #8d97ad;
+
 
             &:hover {
-                color: $themecolor;
+                color: #316ce8
+;
             }
         }
     }
@@ -1950,12 +1975,13 @@ html body .accordion {
 
 #accordion4 {
     .card-header {
-        border: 1px solid $border;
+        border: 1px solid gray;
         background: transparent;
         margin-bottom: 10px;
 
         a {
-            color: $muted;
+            color: #8d97ad
+;
         }
 
         &:hover {
@@ -1963,7 +1989,7 @@ html body .accordion {
             border: 1px solid $info;
 
             a {
-                color: $white;
+                color:#ffffff;
             }
         }
     }
@@ -1973,7 +1999,7 @@ html body .accordion {
         border: 1px solid $info;
 
         a {
-            color: $white;
+            color:#ffffff;
         }
     }
 }
@@ -1987,7 +2013,7 @@ Breadcrumb
 
     .breadcrumb-item,
     .breadcrumb-item a {
-        color: $white;
+        color:#ffffff;
 
         &.active {
             opacity: 0.7;
@@ -2009,7 +2035,8 @@ Breadcrumb
 }
 
 .card-subtitle {
-    color: $muted;
+    color: #8d97ad
+;
     margin-bottom: 30px;
     font-size: 14px;
 }
@@ -2023,7 +2050,7 @@ Breadcrumb
 
 .card-default {
     .card-header {
-        background: $white;
+        background:#ffffff;
         border-bottom: 0px;
     }
 }
@@ -2148,7 +2175,7 @@ Custom-select
 
 .custom-select {
     background: url(../../assets/images/ui/custom-select.png) right .75rem center no-repeat;
-    border: 2px solid $border;
+    border: 2px solid gray;
     height: calc(2.25rem + 12px);
 }
 
@@ -2248,9 +2275,10 @@ custom modals
         position: absolute;
         right: 12px;
         top: 10px;
-        color: $muted;
+        color: #8d97ad
+;
         font-size: 25px;
-        background: $white;
+        background:#ffffff;
         width: 20px;
         height: 20px;
         text-align: center;
@@ -2321,7 +2349,7 @@ common-innerpage-banner
     background-position: center center;
 
     .title {
-        color: $white;
+        color:#ffffff;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 40px;
@@ -2329,7 +2357,7 @@ common-innerpage-banner
     }
 
     .subtitle {
-        color: $white;
+        color:#ffffff;
     }
 }
 
@@ -2352,7 +2380,8 @@ common-innerpage-banner
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: $themecolor;
+    background: #316ce8
+;
 }
 
 /*******************
@@ -2495,8 +2524,8 @@ Modal in center
     height: 20em;
 }
 .colTarjetaService{
-    margin-top: 8%;
-    margin-left: 8%;
+    margin-top: 9%;
+    margin-left: 15%;
     position: relative;
 }
 
@@ -2504,13 +2533,44 @@ Modal in center
     margin-left: 2em;
 }
 .colDescService{
-    margin-left: 42% !important;
+    margin-left: 39% !important;
     margin-top: -15%;
 
 }
 .cardService{
     background-color: inherit;
     // margin-left: -7em;
+}
+
+.cardServiceEcom{
+    margin-top: 4em!important;
+    margin-left: 1em;
+}
+
+.tituloeCommerce {
+    position: absolute;
+    margin-top: -3em;
+    margin-left: 3%;
+}
+.tituloeApi{
+    position: absolute;
+    margin-top: -3em;
+    margin-left: 7%;
+}
+.tituloeLanding{
+    
+        position: absolute;
+        margin-top: -3em;
+      
+        margin-left: -19em;
+
+  
+}
+.tituloelearning{
+    position: absolute;
+    margin-top: -2em;
+    margin-left: 6%;
+    margin-bottom: 1em;
 }
 
 .backReq{
@@ -2527,6 +2587,290 @@ Modal in center
 
 .seccionServicios{
     background-color: black;
-    margin-top: -10%;
+    margin-top: -15%;
     position: relative;
+}
+
+.tituloHeader{
+    font-weight: 700!important;
+    color: white;
+}
+
+.posLinea{
+    margin-top: -10em!important;
+}
+
+.contenedorHeader{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cardTextAdjust{
+    text-align: center;
+    background-color: transparent;
+}
+.tituloProyectos1{
+    text-align: left;
+
+}
+.subtituloProyectos{
+    text-align: left;
+}
+.tituloProyectos2{
+    text-align: right;
+
+}
+.subtituloProyectos2{
+    text-align: right;
+}
+
+.widthColumnFooter{
+    max-width: 18%;
+}
+
+.btnLinkProyectosLeft{
+    text-align: left;
+}
+
+.btnLinkProyectosRight{
+    text-align: right;
+
+}
+
+.cardImgWidth{
+    height: 18em;
+}
+
+.containerGeneralBlack{
+    background-color: #000;
+}
+.container-padding{
+    padding-top: 40px;
+    margin-top: 5em;
+   margin-bottom: 5em;
+}
+.containerTituloMargin{
+    margin-top: 5em;
+}
+
+.containerContenidoWidth{
+    max-width: 50em;
+
+}
+
+.tituloNosotros{
+    color: white;
+}
+
+.cardHeight{
+    height: 100%;
+}
+
+
+@media(min-width:1480px){
+    .seccionServicios {
+        background-color: #000;
+        margin-top: -15%;
+        padding: 14%;
+        position: relative;
+    }
+}
+
+@media(min-width:1024px){
+    .colanimacionResponsive{
+        display: none!important;
+    }
+}
+
+.header-bottom {
+    height: 13%;
+    width: 80%;
+    background: linear-gradient(#F08E4A, #e27b36);
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 2% auto;
+}
+
+.footer-top {
+    height: 20%;
+    width: 80%;
+    background: linear-gradient(#bc581e, #e27b36);
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 2% auto;
+    position: relative;
+}
+
+.header1-top {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 30%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(-20deg);
+    box-shadow: inset -2px -3px #c9c9c9;
+}
+
+.header1-top:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: -170%;
+    top: -260%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px 2px #c9c9c9;
+  }
+  
+.header1-top:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 180%;
+    top: -50%;
+    border-radius: 40%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px -3px #c9c9c9;
+  }
+
+  .header2-top {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 64%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(10deg);
+    box-shadow: inset -3px 0 #c9c9c9;
+  }
+  
+  .header2-top:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 150%;
+    top: -130%;
+    border-radius: 40%;
+    transform: rotate(90deg);
+    box-shadow: inset 1px 3px #c9c9c9;
+  }
+  
+
+.Componente1 {
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
+}
+
+.Componente2 {
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
+}
+
+.Componente3 {
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
+}
+
+.Componente4 {
+    width: 80%;
+    height: 3%;
+    background: linear-gradient(#bf3813, #c45e38);
+    margin: 2% auto;
+
+}
+
+.Componente5 {
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
+}
+
+.Componente6 {
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
+}
+
+.Componente7 {
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient(#228c1d, #91ce50);
+    border-radius: 20px;
+}
+
+.Componente8 {
+    width: 80%;
+    height: 3%;
+    background: linear-gradient(#bf3813, #c45e38);
+    margin: 2% auto;
+}
+.Componente9 {
+    width: 80%;
+    height: 8%;
+    background: linear-gradient(#7f3608, #702e05);
+    margin: 2% auto;
+    border-radius: 15px;
+}
+
+.Componente10 {
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient(#f4d004, #d6bb22);
+    border-radius: 20px;
+}
+
+.Landing {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    overflow: scroll;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 500px) and (min-height: 40px) {
+    .Landing {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 500px) and (min-height: 401px) {
+    .Landing {
+        width:450px;
+        height: 400px;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .Landing {
+        width: 700px;
+        height: 600px;
+    }
 }

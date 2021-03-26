@@ -1,0 +1,48 @@
+{
+  "componentes": [
+    {
+      "id": 1,
+      "nombre": "Login",
+      "accion": "logearse",
+      "doc": "toda la documentación"
+    },
+    {
+      "id": 2,
+      "nombre": "Registro",
+      "accion": "registrarse",
+      "doc": "toda la documentación"
+    },
+    {
+      "id": 3,
+      "nombre": "Nuevo Componente",
+      "accion": "crear componente",
+      "doc": "toda la documentación"
+    },
+    {
+      "id": 4,
+      "nombre": "Mail",
+      "accion": "mail service",
+      "doc": "toda la documentación"
+    },
+    {
+      "id": 5,
+      "nombre": "Mercado Pago",
+      "accion": "mercado pago service",
+      "doc": "toda la documentación"
+    },
+    {
+      "nombre": "asdasdasd",
+      "id": 6
+    },
+    {
+      "nombre": "asdasdas",
+      "id": 7
+    },
+    {
+      "nombre": "listado de cursos",
+      "accion": "",
+      "doc": "",
+      "id": 19
+    }
+  ]
+}
